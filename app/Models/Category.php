@@ -8,10 +8,14 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Category extends Model
 {
-    use HasFactory;
-
+    /**
+     * @var string[]
+     */
     protected $fillable = ['name', 'parent_id'];
 
+    /**
+     * @return HasMany
+     */
     public function posts(): HasMany
     {
         return $this->hasMany(Post::class, 'category_id', 'id');

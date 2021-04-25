@@ -8,13 +8,22 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Rate extends Model
 {
-    use HasFactory;
+    /**
+     * @var string[]
+     */
+    protected $fillable = ['rate', 'post_id'];
 
+    /**
+     * @return BelongsTo
+     */
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }
 
+    /**
+     * @return BelongsTo
+     */
     public function post(): BelongsTo
     {
         return $this->belongsTo(Post::class);

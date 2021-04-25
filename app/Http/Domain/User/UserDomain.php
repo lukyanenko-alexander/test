@@ -8,13 +8,23 @@ use App\Repositories\User\UserRepository;
 
 class UserDomain extends BaseDomain
 {
+    /**
+     * @var UserRepository
+     */
     private $repository;
 
+    /**
+     * UserDomain constructor.
+     * @param UserRepository $repository
+     */
     public function __construct(UserRepository $repository)
     {
         $this->repository = $repository;
     }
 
+    /**
+     * @return RepositoryInterface
+     */
     public function repository(): RepositoryInterface
     {
         return $this->repository;

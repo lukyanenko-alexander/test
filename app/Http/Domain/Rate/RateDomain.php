@@ -8,13 +8,23 @@ use App\Repositories\RepositoryInterface;
 
 class RateDomain extends BaseDomain
 {
+    /**
+     * @var RateRepository
+     */
     private $repository;
 
+    /**
+     * RateDomain constructor.
+     * @param RateRepository $repository
+     */
     public function __construct(RateRepository $repository)
     {
         $this->repository = $repository;
     }
 
+    /**
+     * @return RepositoryInterface
+     */
     public function repository(): RepositoryInterface
     {
         return $this->repository;

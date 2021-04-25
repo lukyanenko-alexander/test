@@ -24,8 +24,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('categories', CategoryController::class);
-Route::apiResource('posts', PostController::class);
-Route::apiResource('users', UserController::class);
-Route::apiResource('rates', RateController::class);
-Route::apiResource('comments', CommentController::class);
+Route::middleware('auth:sanctum')->group(function () {
+    Route::post('posts', PostController::class.'@store');
+    Route::post('rates', RateController::class.'@store');
+});
+
+Route::apiResource('categories', CategoryController::class)->only('show', 'index');
+Route::apiResource('posts', PostController::class)->only('show');

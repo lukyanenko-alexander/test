@@ -8,6 +8,14 @@ use Illuminate\Http\JsonResponse;
 
 trait ResponseTrait
 {
+    /**
+     * @param DatabaseManager $database
+     * @param Exception $exception
+     * @param string $message
+     * @param int $status
+     * @return JsonResponse
+     * @throws \Throwable
+     */
     protected function jsonException(DatabaseManager $database, Exception $exception, string $message = '', int $status = 500): JsonResponse
     {
         $database->rollBack();

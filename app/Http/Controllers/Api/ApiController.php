@@ -13,13 +13,24 @@ class ApiController extends Controller
 {
     use ResponseTrait;
 
+    /**
+     * @var BaseDomain
+     */
     protected $domain;
 
+    /**
+     * ApiController constructor.
+     * @param BaseDomain $domain
+     */
     public function __construct(BaseDomain $domain)
     {
         $this->domain = $domain;
     }
 
+    /**
+     * @param array $relations
+     * @return JsonResponse
+     */
     public function index(array $relations = []): JsonResponse
     {
         return $this->json('', [
@@ -27,6 +38,10 @@ class ApiController extends Controller
         ]);
     }
 
+    /**
+     * @param string $id
+     * @return JsonResponse
+     */
     public function show(string $id): JsonResponse
     {
         return $this->json('', [
@@ -34,37 +49,11 @@ class ApiController extends Controller
         ]);
     }
 
-    public function update(Request $request, string $id): JsonResponse
-    {
-        $item = $this->domain->show($id);
-        try {
-            $this->domain->database()->beginTransaction();
-            $item = $this->domain->update($item, $request->all());
-            $this->domain->database()->commit();
-
-            return $this->json('', [
-                'result' => $item
-            ]);
-        } catch (Exception $exception) {
-            $this->jsonException($this->domain->database(), $exception, $exception->getMessage());
-        }
-    }
-
-    public function store(Request $request): JsonResponse
-    {
-        try {
-            $this->domain->database()->beginTransaction();
-            $item = $this->domain->create($request->all());
-            $this->domain->database()->commit();
-
-            return $this->json('', [
-                'result' => $item
-            ], 201);
-        } catch (Exception $exception) {
-            return $this->jsonException($this->domain->database(), $exception, $exception->getMessage());
-        }
-    }
-
+    /**
+     * @param string $id
+     * @return JsonResponse
+     * @throws \Throwable
+     */
     public function destroy(string $id): JsonResponse
     {
         $item = $this->domain->show($id);
