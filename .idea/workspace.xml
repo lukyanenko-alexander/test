@@ -2,45 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f979a58-f901-448e-a9f3-1350fc2cbb53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Post/PostStoreRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Rate/RateStoreRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Observers/PostObserver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Observers/RateObserver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Rules/RateOnce.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/RateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/RateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Domain/BaseDomain.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Domain/BaseDomain.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Domain/BaseDomainInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Domain/BaseDomainInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Domain/Category/CategoryDomain.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Domain/Category/CategoryDomain.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Domain/Comment/CommentDomain.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Domain/Comment/CommentDomain.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Domain/Post/PostDomain.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Domain/Post/PostDomain.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Domain/Rate/RateDomain.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Domain/Rate/RateDomain.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Domain/User/UserDomain.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Domain/User/UserDomain.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Rate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Rate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/BaseRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BaseRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Category/EloquentCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Category/EloquentCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Comment/EloquentComment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Comment/EloquentComment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Post/EloquentPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Post/EloquentPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Rate/EloquentRate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Rate/EloquentRate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/RepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/RepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Traits/ResponseTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Traits/ResponseTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_22_062032_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_22_062032_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_22_062044_create_rates_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_22_062044_create_rates_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,7 +264,7 @@
       <workItem from="1619267589281" duration="1102000" />
       <workItem from="1619269569765" duration="9477000" />
       <workItem from="1619327631359" duration="5958000" />
-      <workItem from="1619337943314" duration="2758000" />
+      <workItem from="1619337943314" duration="3512000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <created>1619177660731</created>
@@ -311,7 +273,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619177660731</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="wip">
+      <created>1619347273142</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619347273142</updated>
+    </task>
+    <task id="LOCAL-00003" summary="wip">
+      <created>1619347340884</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619347340884</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
