@@ -6,5 +6,11 @@ php composer.phar install
 Обновите кэш:
 php artisan config:cache
 
+Запустите миграции:
+php artisan migrate
+
+Вставьте данные:
+php artisan db:seed
+
 Запустите сервер:
 php artisan serve
